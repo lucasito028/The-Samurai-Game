@@ -9,7 +9,7 @@ function rectangularCollision({rectangle1,rectangle2}){
         rectangle1.attackBox.position.y <= rectangle2.position.y + rectangle2.height)
 }
 
-function determineWinner({player, enemy, timerId}){
+function determineWinner({ player, enemy, timerId }){
     clearTimeout(timerId)
     document.querySelector('#displayText').style.display = 'flex'
     if (player.health === enemy.health){
@@ -21,7 +21,7 @@ function determineWinner({player, enemy, timerId}){
     }
 }
 
-let timer = 10
+let timer = 200
 let timerId
 
 function decreaseTimer(){

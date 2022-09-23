@@ -225,7 +225,7 @@ function animate() {
         rectangle1: player,
         rectangle2: enemy
     }) && player.isAttacking && player.framesCurrent === 2) {
-            enemy.takeHit()
+            enemy.takeHit2()
             player.isAttacking = false
             document.querySelector('#enemyHealth').style.width = enemy.health + '%'
     }
